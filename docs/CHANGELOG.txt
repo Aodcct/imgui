@@ -97,6 +97,10 @@ Other changes:
 - Examples: Vulkan: Added various optional helpers in imgui_impl_vulkan.h (they are used for multi-viewport support)
   to make the examples main.cpp easier to read.
 
+Breaking Changes:
+- Removed implicit default parameter to IsMouseDragging(int button = 0) to be consistent
+  with other mouse functions (none of the other functions have it).
+
 Other Changes:
 - Misc: Added ImGuiMouseCursor_NotAllowed enum so it can be used by more shared widgets. [@rokups]
 - Backends: GLFW, SDL, Win32, OSX, Allegro: Added support for ImGuiMouseCursor_NotAllowed. [@rokups]
